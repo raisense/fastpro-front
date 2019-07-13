@@ -1767,7 +1767,8 @@ Custom-select
 textarea
 ******************/
 textarea {
-  resize: none;
+  /* resize: none; */
+  max-height: 200px;
 }
 
 /*******************
