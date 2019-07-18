@@ -2385,14 +2385,15 @@ File: scss
 }
 
 .card-fl {
-  border: 1px solid #ccc;
   padding: 12px;
   margin-top: 25px!important;
+  box-shadow: 0px 3px 6px #ccc;
+  border-radius: 20px;
 }
 
 .image-fixed {
-  width: 50px;
-  height: 50px;
+  width: 120px;
+  height: 120px;
   margin: auto;
 }
 
@@ -2516,4 +2517,54 @@ File: scss
   .title_nh {
     font-size: 22px;
   }
+}
+.card-fl .title_main{
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.display-header{
+  margin-top: 10px;
+  font-size: 38px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+.yellow{
+  color: #F7D452;
+}
+.card-fl-content{
+  margin-top: 12px;
+}
+.blue{
+  color: #0099E8;
+}
+.red{
+  color: #DC1D5F;
+}
+.purple{
+  color: #8E09C5;
+}
+.green{
+  color: #389D9C;
+}
+.yellow-t{
+  color: #FFC408;
+}
+.fixed-right{
+  position: fixed;
+  right: 25px;
+  bottom: 80px;
+}
+.fixed-right .social_media_btn{
+  box-shadow: 0px 3px 6px #777;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  vertical-align: middle;
+  outline: none;
+  background-color: #fff;
+}
+.fixed-right .social_media_btn svg{
+  vertical-align: middle;
 }
