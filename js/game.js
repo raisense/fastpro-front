@@ -6,7 +6,8 @@ const scoreText = document.getElementById("score");
 const progressBarFull = document.getElementById("progressBarFull");
 const loader = document.getElementById("loader");
 const game = document.getElementById("game");
-const result = document.getElementById("result");
+const result = document.getElementById("result-header");
+const container_result = document.getElementById("result")
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
@@ -64,7 +65,7 @@ startGame = () => {
 getNewQuestion = () => {
   if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
       container.style.display="none";
-      result.style.display="block";
+      container_result.style.display="block";
       result.innerText = `Yakuniy natija: ${score}/${MAX_QUESTIONS}`;
   }else{
     questionCounter++;
@@ -114,3 +115,8 @@ incrementScore = num => {
   score += num;
   scoreText.innerText = score;
 };
+
+function returnMainPage(){
+  window.history.back();
+};
+
